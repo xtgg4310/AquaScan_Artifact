@@ -39,7 +39,7 @@ bash infe_0229.sh;bash infe_0807.sh;bash infe_0814.sh;bash infe_0821.sh
 python cal_results.py
 ```
 
-### remove the produced results.
+### Remove the produced results.
 
 ```bash
 bash remove_history_0229.sh;bash remove_history_0807.sh;bash remove_history_0814.sh;bash remove_history_0821.sh
