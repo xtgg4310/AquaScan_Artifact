@@ -11,10 +11,21 @@ cd image_reconstruction
 bash 0229_recover.sh;bash 0807_recover.sh;bash 0814_recover.sh;bash 0821_recover.sh
 ```
 
-### Object Detection
+### Object Detection & Tracking & Moving Detection
 Run the script label_0229.sh,label_0807.sh, label_0814.sh,label_0821.sh
 ```bash
 cd ..
 bash  label_0229.sh;bash label_0807.sh;bash label_0814.sh;bash label_0821.sh
 ```
 
+### Activity Recognition
+Run the script infe_0229.sh,infe_0807.sh, infe_0814.sh,infe_0821.sh
+```bash
+cd ..
+bash  infe_0229.sh;bash infe_0807.sh;bash infe_0814.sh;bash infe_0821.sh
+```
+
+### Plot Confusion Matrix and Show the numercial Results
+```bash
+python cal_results.py
+```
