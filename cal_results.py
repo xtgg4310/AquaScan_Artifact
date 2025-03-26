@@ -68,14 +68,14 @@ def overall(martix):
 
 def read_file_data(dirs,targets):
     data_detect_all=np.array([0,0,0,0])
-    data_IoU_all=[]
+    data_IoU_all=np.array([])
     dir_one=dirs[0]
     for target in targets:
         data_detect="./"+dir_one+"/"+target+"_detect.npy"
         data_iou="./"+dir_one+"/"+target+"_IoU.npy"
         data_detect_static=np.load(data_detect)
         data_IoU_static=np.load(data_iou)
-        if data_IoU_all==[]:
+        if data_IoU_all.size==0:
             data_IoU_all=data_IoU_static
         else:
             data_IoU_all=np.concatenate((data_IoU_all,data_IoU_static))
