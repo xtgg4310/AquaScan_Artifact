@@ -21,7 +21,6 @@ bash  label_0229.sh;bash label_0807.sh;bash label_0814.sh;bash label_0821.sh
 ### Activity Recognition
 Run the script infe_0229.sh,infe_0807.sh, infe_0814.sh,infe_0821.sh
 ```bash
-cd ..
 bash  infe_0229.sh;bash infe_0807.sh;bash infe_0814.sh;bash infe_0821.sh
 ```
 
