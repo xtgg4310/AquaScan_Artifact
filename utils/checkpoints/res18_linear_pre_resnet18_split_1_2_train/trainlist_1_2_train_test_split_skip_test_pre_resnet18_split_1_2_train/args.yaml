@@ -1,0 +1,61 @@
+augment_type: none
+batch_size: 64
+beta: 0.999
+channel_num: 3
+cosine: true
+data_type: classify
+enable_wandb: true
+epochs: 100
+features_size: 32
+freeze_layers: []
+gpus:
+- 1
+hidden_size: 1024
+infe: false
+label2id:
+  abnormal: -1
+  float: -1
+  noise: -1
+  other: -1
+  others: -1
+  sink: 0
+  sinking: 0
+  stand: 0
+  struggle: 1
+  swim: -1
+load_model_path: ''
+load_not_strict: false
+loss: ce
+lr: 0.001
+lr_decay_epochs:
+- 150
+- 275
+- 400
+lr_decay_rate: 0.1
+lstm_hidden_size: 128
+lstm_input_size: 256
+lstm_num_layer: 2
+model_dir: checkpoints/res18_linear_pre_resnet18_split_1_2_train
+model_type: res18_linear
+momentum: 0.9
+note: Use manual label in 2022 & hengfa to pretrain the model. Channel = 3. Combine
+  sink and stand as still.
+num_classes: 2
+num_layers: 7
+print_freq: 10
+result_dir: checkpoints/res18_linear_pre_resnet18_split_1_2_train/trainlist_1_2_train_test_split_skip_test_pre_resnet18_split_1_2_train
+save_prefix: pre_resnet18_split_1_2_train
+save_vis: false
+seed: 42
+shuffle: true
+temperature: 0.07
+train: true
+train_list: /home/haozheng/underwater-master/underwater-master/data/trainlist_1_2_train/train_split_skip_train.txt
+val_list: ../underwater-master/data/trainlist_1_2_train/test_split_skip_test.txt
+vis_freq: 10
+wandb_sweep_path: ''
+warm: true
+warm_epochs: 10
+warmup_from: 0.01
+warmup_to: 0.0009755527298894294
+weight_decay: 0.0001
