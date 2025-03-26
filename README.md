@@ -24,7 +24,7 @@ Run the script infe_0229.sh,infe_0807.sh, infe_0814.sh,infe_0821.sh
 bash  infe_0229.sh;bash infe_0807.sh;bash infe_0814.sh;bash infe_0821.sh
 ```
 
-### Plot Confusion Matrix and Show the numercial Results
+### Plot Confusion Matrix and Show the numercial results
 ```bash
 python cal_results.py
 ```
