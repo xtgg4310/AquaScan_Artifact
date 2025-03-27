@@ -7,9 +7,9 @@
 For common python packages such as numpy, matplotlib, you can download through pip or conda install these packages
 
 Some important package version:
-*numpy version: 1.24.3
-*scikit-image: 0.20.0
-*scikit-learn: 1.3.0
+* numpy version: 1.24.3
+* scikit-image: 0.20.0
+* scikit-learn: 1.3.0
 matplotlib: 3.7.1
 PyTorch: 2.1.0
 CUDA Version: 12.1
