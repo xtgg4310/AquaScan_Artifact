@@ -3,6 +3,15 @@
 ## This repo contains the code, deployment instructions, Experiment instruction and detail usage of each function.
 
 ## Installation and Preparation for Artifact evaluation
+
+### Hardware depandencies
+
+Computing platform: A server with CPU and GPU. Our code is tested on a computer with 7950x3D CPU, 4090 24GB GPU and 64GB RAM.
+
+Sensor Node:
+* Control Unit: Raspberry Pi 4B model 8GB RAM
+* Ping360 Scanning Sonar
+
 ### Software dependencies
 For common python packages such as numpy, matplotlib, you can download through pip or conda install these packages
 
