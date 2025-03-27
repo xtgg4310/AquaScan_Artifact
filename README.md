@@ -6,7 +6,10 @@
 ### Software dependencies
 
 ### Dataset Setup
-Download the dataset from the onedrive link. Unzip the file and put raw_data, raw_labels, scripts, checkpoints under the path: ./AquaScan_Artifact/image_reconstruction/AquaScan_data
+Download the dataset from the onedrive link. 
+
+Unzip the file and put raw_data, raw_labels, scripts, checkpoints under the path: ./AquaScan_Artifact/image_reconstruction/AquaScan_data
+
 Run the script ./AquaScan_Artifact/image_reconstruction/prepare.sh
 ```bash
 cd image_reconstruction
