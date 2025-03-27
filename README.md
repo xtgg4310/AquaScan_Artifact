@@ -51,3 +51,6 @@ cd image_reconstruction
 bash remove_recover.sh
 ```
 
+### Expected Outputs:
+F1-score:
+
