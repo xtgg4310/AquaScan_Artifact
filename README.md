@@ -101,5 +101,5 @@ Accuracy: 0.916972814107274
 ## Detail of each function
 
 ### Sonar Control
-see the README.md in sonar control folder.
+see the README.md in Sonar_control folder.
 
