@@ -12,6 +12,7 @@ Sensor Node:
 * Control Unit: Raspberry Pi 4B model 8GB RAM
 * Ping360 Scanning Sonar
 
+
 ### Software dependencies
 For common python packages such as numpy, matplotlib, you can download through pip or conda install these packages
 
@@ -77,5 +78,16 @@ bash remove_recover.sh
 ```
 
 ### Expected Outputs:
-F1-score:
+F1_score: 0.861731843575419
+miss_rate: 0.060167555217060166
+IoU_aver: 0.5205157489569353
+
+Accuracy: 0.916972814107274
+
+
+
+## Detail of each function
+
+### Sonar Control
+see the README.md in sonar control folder.
 
