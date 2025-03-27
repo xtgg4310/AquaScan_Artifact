@@ -17,7 +17,9 @@ image_reconstruction/
 │   ├── 08213003
 │   ├── 08213004
 │   └── 08213005
-└── README.md
+├── README.md
+├── prepare.sh
+└── remove_recover.sh
 ```
 
 ## Usage
