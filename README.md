@@ -45,7 +45,11 @@ bash prepare.sh
 
 ### Image Reconstruction
 Run the script 0229_recover.sh, 0807_recover.sh, 0814_recover.sh, 0821_recover.sh in the folder image_reconstruction
+
+These four script will process four dataset in the 
+
 ```bash
+cd image_reconstruction
 bash 0229_recover.sh;bash 0807_recover.sh;bash 0814_recover.sh;bash 0821_recover.sh
 ```
 
@@ -78,9 +82,11 @@ bash remove_recover.sh
 ```
 
 ### Expected Outputs:
-F1_score: 0.861731843575419
-miss_rate: 0.060167555217060166
-IoU_aver: 0.5205157489569353
+Object detection results:
+
+* F1_score: 0.861731843575419
+* miss_rate: 0.060167555217060166
+* IoU_aver: 0.5205157489569353
 
 Accuracy: 0.916972814107274
 
