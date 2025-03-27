@@ -99,12 +99,3 @@ mode_<mode_number>/
    - Background file must be pre-recorded `.txt` with matching sample count.  
 
 ---
-
-## License (待补充)
-*(To be added based on actual licensing agreement)*
-
----
-
-## Contact (待补充)
-For issues, contact: [email@example.com]  
-Repository: [https://github.com/repo](https://github.com/repo)
