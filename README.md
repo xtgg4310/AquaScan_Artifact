@@ -46,7 +46,7 @@ bash prepare.sh
 ### Image Reconstruction
 Run the script 0229_recover.sh, 0807_recover.sh, 0814_recover.sh, 0821_recover.sh in the folder image_reconstruction
 
-These four script will process four dataset in the 
+These four script will process four dataset in the raw_data.
 
 ```bash
 cd image_reconstruction
@@ -54,7 +54,13 @@ bash 0229_recover.sh;bash 0807_recover.sh;bash 0814_recover.sh;bash 0821_recover
 ```
 
 ### Object Detection & Tracking & Moving Detection
+
 Run the script label_0229.sh,label_0807.sh, label_0814.sh,label_0821.sh
+
+For each script label_xxxx.sh, it contains the command to run the pre_sonar_bias.py pre_sonar.py/pre_sonar_opt_yoho.py label2dis.py track.py and moving_detect.py with pre-defined parameters.
+
+The script will generate visualization in the file with name xxxx_localize_3, intermediate results of tracking in the folder track_xxxx and result_xxxx.
+
 ```bash
 cd ..
 bash label_0229.sh;bash label_0807.sh;bash label_0814.sh;bash label_0821.sh
