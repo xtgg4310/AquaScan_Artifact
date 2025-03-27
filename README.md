@@ -2,7 +2,7 @@
 
 ## This repo contains the code, deployment instructions, Experiment instruction and detail usage of each function.
 
-## Prepare for Artifact evaluation
+## Installation and Preparation for Artifact evaluation
 ### Software dependencies
 For common python packages such as numpy, matplotlib, you can download through pip or conda install these packages
 
@@ -14,6 +14,11 @@ Some important package version:
 * PyTorch: 2.1.0
 * CUDA Version: 12.1
 * Opencv-python: 4.8.1.78
+
+If you want to control scanning sonar (Ping 360) to collect data by yourselves, you should install the brping packages through run the command below:
+```bash
+pip install --user bluerobotics-ping --upgrade
+```
 
 
 ### Dataset Setup
