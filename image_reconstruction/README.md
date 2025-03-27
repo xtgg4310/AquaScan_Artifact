@@ -5,7 +5,6 @@ image_reconstruction is a Python program for reconstructing the "skip-scan" imag
 ```bash
 image_reconstruction/
 ├── reconstruction.py
-├── prepare_data.py
 ├── recover
 │   ├── img
 │   └── txt
@@ -24,7 +23,7 @@ image_reconstruction/
 ## Usage
 
 ```bash
-python3 reconstruction.py --raw 2292002 --save_txt txt/ --save_img img/ --skip 2 --offset 1 --scan 1 
+python3 reconstruction.py --raw path --save_txt txt/ --save_img img/ --skip 2 --offset 1 --scan 1 
 ```
 raw: unreconstructed data path.         
       
