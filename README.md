@@ -1,6 +1,6 @@
 # Mobicom2025 Artifact Evaluation: AquaScan: A Sonar-based Underwater Sensing System for Human Activity Monitoring
 
-## This repo contains the code, deployment instructions, and limitations of the current design.
+## This repo contains the code, deployment instructions, Experiment instruction and detail usage of each function.
 
 ## Prepare for Artifact evaluation
 ### Software dependencies
