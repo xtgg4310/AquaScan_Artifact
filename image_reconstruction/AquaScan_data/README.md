@@ -24,7 +24,7 @@ We labeled the ground truth of five activities as defined in paper Section 4.4.
 * Motionless: Subjects marked as "Stand" and maintain this meta-activity within the threshold of motionless-to-drowning (60 second).
 * Splashing: Subjects marked as "Struggle" and maintain this meta-activity within the threshold of splashing-to-Struggling (30 second).
 * Struggling: Subjects marked as "Struggle" and maintain this meta-activity over the threshold of splashing-to-Struggling (30 second) but still within the threshold of splashing-to-Struggling (20 second in AquaScan).
-* Drowning: (1) Subjects marked as "Stand" and maintain this meta-activity over the threshold of motionless-to-drowning (60 second). (2) Subjects are recognized as struggling over the threshold of splashing-to-Struggling (20 second).
+* Drowning: (1) Subjects marked as "Stand" and maintain this meta-activity over the threshold of motionless-to-drowning (60 second). (2) Subjects recognized as struggling over the threshold of splashing-to-Struggling (20 second).
 
 ### Why we need struggling and two types of drowning
 (1) Struggling and drowning can be seen as two stages that one subjects are experiencing. Struggling means subjects have energy when they try to save themselves but drowning means subjects are in extreme danger due to continuous comsuption of energy.
