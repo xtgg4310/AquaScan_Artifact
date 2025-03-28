@@ -32,7 +32,7 @@ pip install --user bluerobotics-ping --upgrade
 ### Deployment Instruction
 To deploy Ping360 Sonar in the pool, we use a stand shown in the figure below to fix the position of sonars.
 
-![image](https://github.com/xtgg4310/AquaScan_Artifact/blob/main/figure/setup-4.jpg)
+![image](https://github.com/xtgg4310/AquaScan_Artifact/blob/main/figure/setup-2-2.jpg)
 
 ### Dataset Setup
 Download the dataset from the onedrive link. 
