@@ -45,6 +45,8 @@ cd image_reconstruction
 bash prepare.sh
 ```
 ## Experiments Instruction
+### Before Experiments
+Please read the README.md in AquaScan_data to learn about the data and the label. Also, it includes the description of scripts.
 
 ### Image Reconstruction
 Run the script 0229_recover.sh, 0807_recover.sh, 0814_recover.sh, 0821_recover.sh in the folder image_reconstruction
