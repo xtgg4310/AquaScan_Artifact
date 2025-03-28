@@ -2,9 +2,6 @@
 
 ## This repo contains the code, deployment instructions, Experiment instruction and detail usage of each function.
 
-## Deployment Instruction
-
-
 ## Installation and Preparation for Artifact evaluation
 
 ### Hardware depandencies
@@ -13,7 +10,7 @@ Computing platform: A server with CPU and GPU. Our code is tested on a computer 
 
 Sensor Node:
 * Control Unit: Raspberry Pi 4B model 8GB RAM
-* Ping360 Scanning Sonar
+* Ping360 Scanning Sonar: https://bluerobotics.com/store/sonars/imaging-sonars/ping360-sonar-r1-rp/
 
 
 ### Software dependencies
@@ -32,7 +29,9 @@ If you want to control scanning sonar (Ping 360) to collect data by yourselves, 
 ```bash
 pip install --user bluerobotics-ping --upgrade
 ```
-
+### Deployment Instruction
+To deploy Ping360 Sonar in the pool, we use a stand shown in the figure below to fix the position of sonars.
+![image](https://github.com/xtgg4310/AquaScan_Artifact/blob/main/figure/setup-4.jpg）
 
 ### Dataset Setup
 Download the dataset from the onedrive link. 
