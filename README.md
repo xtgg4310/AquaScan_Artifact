@@ -59,7 +59,7 @@ Run the script label_0229.sh,label_0807.sh, label_0814.sh,label_0821.sh
 
 For each script label_xxxx.sh, it contains the command to run the pre_sonar_bias.py pre_sonar.py/pre_sonar_opt_yoho.py label2dis.py track.py and moving_detect.py with pre-defined parameters.
 
-The script will generate visualization in the file with name xxxx_localize_3, intermediate results of tracking in the folder track_xxxx and result_xxxx.
+The script will generate visualization in the file with name xxxx_localize_3, intermediate results of tracking track_xxxx and result_xxxx. 
 
 ```bash
 cd ..
