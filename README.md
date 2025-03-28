@@ -46,7 +46,7 @@ bash prepare.sh
 ### Image Reconstruction
 Run the script 0229_recover.sh, 0807_recover.sh, 0814_recover.sh, 0821_recover.sh in the folder image_reconstruction
 
-These four script will process four dataset in the raw_data.
+These four script will process unreconstructed dataset in the raw_data.
 
 ```bash
 cd image_reconstruction
