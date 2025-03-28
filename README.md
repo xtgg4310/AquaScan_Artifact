@@ -73,7 +73,7 @@ bash create_folder.sh
 bash infe_0229.sh;bash infe_0807.sh;bash infe_0814.sh;bash infe_0821.sh
 ```
 
-### Plot Confusion Matrix and Show the numercial results
+### Plot confusion matrix and Show the numercial results
 ```bash
 python cal_results.py
 ```
