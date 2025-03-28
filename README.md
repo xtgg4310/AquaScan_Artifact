@@ -73,7 +73,7 @@ bash create_folder.sh
 bash infe_0229.sh;bash infe_0807.sh;bash infe_0814.sh;bash infe_0821.sh
 ```
 
-### Plot confusion matrix and Show the numercial results
+### Plot confusion matrix and show the numercial results
 ```bash
 python cal_results.py
 ```
@@ -103,3 +103,11 @@ Please see the README.md in Sonar_control folder.
 
 ### image reconstruction
 Please see the README.md in image_reconstruction folder.
+
+### object detection
+We have three code:
+* pre_sonar_bias.py: remove the bias caused by mechnical rotation of sonar (seldom happen)
+* pre_sonar.py: denoise sonar images and detect object on the sonar image.
+* pre_sonar_opt_yoho: optimze the dynamic object detection with binary search
+
+
