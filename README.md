@@ -96,10 +96,10 @@ Object detection results:
 
 Accuracy: 0.916972814107274
 
-
-
 ## Detail of each function
 
 ### Sonar Control
-see the README.md in Sonar_control folder.
+Please see the README.md in Sonar_control folder.
 
+### image reconstruction
+Please see the README.md in image_reconstruction folder.
