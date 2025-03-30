@@ -267,7 +267,7 @@ def data_label_tune(obj_dir,label_dir,scenario_list=[]):
         for sonar in sonars:
             if sonar[0]==".":
                 continue
-            if scenario=="2292005" and sonar=="sonar11":   ##2292005 sonar11 has wrong labels, which affects the performance of activtiy recognition and object detections. 2292005's sonar11 has wrong moving labels which is hard to fix. Therefore, we do not eval this dataset in object detection.
+            if scenario=="2292005" and sonar=="sonar11":   ##2292005 sonar11 has wrong labels, which affects the performance of activtiy recognition and object detections. 2292005's sonar11 has wrong moving(id: 6) labels which is hard to fix. Therefore, we do not eval this dataset in object detection.
                 continue
             obj_dir_sonar=obj_dir_s+"/"+sonar
             label_dir_sonar=label_dir_s+"/"+sonar
