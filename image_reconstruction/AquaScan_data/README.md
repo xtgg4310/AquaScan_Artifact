@@ -9,7 +9,9 @@ Sonar is designed to scan the areas with acoustic echoes. We use Ping360 to coll
 Each sonar image will be stored in a txt file which is named with the timestamp that scanning sonar starts to scan. 
 Data is orangnized as a 400 * 501 matrix. The first number of one line is the angle (unit: gradian, 1 gradian = 0.9 degree). The 2-501 number represents the amplitude of echoes at corresponding locations.
 
-2292002-2292005 is tested with 10 subjects in the pool yoho. Two sonars are setup at each side of the pool. sonar4 of 2292002 do not receive data so it is empty. There are Label errors in 2292005 sonar11 which degrades the performance of activity recognition(mainly moving) and object detection. We do not include 2292005 sonar11 in evaluatin of object detection since it hard to label one of the moving subject.
+2292002-2292005 is tested with 10 subjects in the pool yoho. Two sonars are setup at each short side of the pool. sonar4 of 2292002 do not receive data so it is empty. There are Label errors (moving,id: 6) in 2292005 sonar11 which degrades the performance of activity recognition(mainly moving) and object detection. We do not include 2292005 sonar11 in evaluatin of object detection since it hard to label one of the moving subject.
+
+0807-0821 is tested with 5 subjects in the another pool with one sonar setup at the long side of the pool.
 
 ## Label
 We label the human activity as the three meta-activity: stand, struggle, moving. 
