@@ -32,7 +32,7 @@ pip install --user bluerobotics-ping --upgrade
 ### Deployment Instruction
 To deploy Ping360 Sonar in the pool, we use a stand shown in the figure below to fix the position of sonars.
 
-![image](https://github.com/xtgg4310/AquaScan_Artifact/blob/main/figure/setup-2-2.jpg=100*20)
+![image](https://github.com/xtgg4310/AquaScan_Artifact/blob/main/figure/setup-2-2.jpg)
 
 ### Dataset Setup
 Download the dataset from the onedrive link. 
@@ -114,6 +114,29 @@ We have three code:
 * pre_sonar_bias.py: remove the bias caused by mechnical rotation of sonar (seldom happen)
 * pre_sonar.py: denoise sonar images and detect object on the sonar image.
 * pre_sonar_opt_yoho: optimze the dynamic object detection with binary search
+
+#### Usage Guide
+per_sonar.py/pre_sonar_opt_yoho.py
+#### Parameters
+| Argument Name | Argument Type | Required | Help Information |
+| --- | --- | --- | --- |
+| `--pre` | int | Yes | preprocess type |
+| `--data` | str | Yes | data_path |
+| `--label` | str | Yes | label_path |
+| `--label_type` | int | Yes | label type |
+| `--parad` | int (multiple values) | Yes | para for noise remove at different distance |
+| `--parap` | int (multiple values) | Yes | para for resizing sonar images |
+| `--paral` | int (multiple values) | Yes | para for resizing labels |
+| `--blur_size` | int (multiple values) | Yes | blur size for dynamic processing |
+| `--human_size` | int | Yes | human size as the threshold for dynamuic processing (calculate as the bbox size with specific distance) |
+| `--remove` | int | Yes | remove semic/static noise under different settings |
+| `--bg_path` | str | Yes | background data path |
+| `--bg_sc` | str | Yes | backgroud folder name |
+| `--max_blur` | int | Yes | max blur size for image denosing |
+| `--process` | int | Yes | whether the sonar image is processed by pre_sonar_bias.py |
+| `--obj_detect` | str | Yes | save suffix of object detection metric |
+| `--obj_type` | str | Yes | folders for object detection metric |
+| `--save_dir_all` | str | Yes | the folder that results(non-numerical) saved |
 
 ### tracking
 
