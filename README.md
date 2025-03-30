@@ -116,8 +116,21 @@ We have three code:
 * pre_sonar_opt_yoho: optimze the dynamic object detection with binary search
 
 #### Usage Guide
-per_sonar.py/pre_sonar_opt_yoho.py
-#### Parameters
+#### Parameters of pre_sonar_opt_yoho.py
+| Argument Name | Argument Type | Required | Help Information |
+| --- | --- | --- | --- |
+| `--pre` | int | Yes | preprocess type |
+| `--data` | str | Yes | data_path |
+| `--label` | str | Yes | label_path |
+| `--label_type` | int | Yes | label type |
+| `--parad` | int (multiple values) | Yes | para for noise remove at different distance |
+| `--parap` | int (multiple values) | Yes | para for resizing sonar images |
+| `--paral` | int (multiple values) | Yes | para for resizing labels |
+| `--obj_detect` | str | Yes | save suffix of object detection metric |
+| `--obj_type` | str | Yes | folders for object detection metric |
+| `--save_dir_all` | str | Yes | the folder that results(non-numerical) saved |
+
+#### Parameters of per_sonar.py
 | Argument Name | Argument Type | Required | Help Information |
 | --- | --- | --- | --- |
 | `--pre` | int | Yes | preprocess type |
@@ -138,6 +151,16 @@ per_sonar.py/pre_sonar_opt_yoho.py
 | `--obj_type` | str | Yes | folders for object detection metric |
 | `--save_dir_all` | str | Yes | the folder that results(non-numerical) saved |
 
+#### Parameters of pre_sonar_bias.py
+| Argument Name | Argument Type | Required | Help Information |
+| --- | --- | --- | --- |
+| `--data` | str | Yes | data_path |
+| `--label` | str | Yes | label_path |
+
 ### tracking
+We have two codes for tracking the objects:
+(1) label2dis.py --generate location of subject in the sonar images
+(2) track.py --generate tracjectory of subjects
+
 
 
