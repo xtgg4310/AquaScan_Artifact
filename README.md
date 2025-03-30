@@ -159,8 +159,103 @@ We have three code:
 
 ### tracking
 We have two codes for tracking the objects:
-(1) label2dis.py --generate location of subject in the sonar images
-(2) track.py --generate tracjectory of subjects
+* label2dis.py --generate location of subject in the sonar images
+* track.py --generate tracjectory of subjects
+
+#### Usage Guide
+#### Parameters of label2dis.py
+| Argument Name | Argument Type | Required | Help Information |
+| --- | --- | --- | --- |
+| `--data` | str | Yes | data_path |
+| `--detect` | str | Yes | label_path |
+| `--gt` | str | Yes | gt_path |
+| `--type` | int | Yes | data_type |
+| `--remove` | int | Yes | data_type |
+| `--dis` | int | Yes | dis |
+| `--parad` | int (multiple values) | Yes | parad |
+| `--save_dir_all` | str | Yes | label_path |
+
+#### Parameters of track.py
+| Argument Name | Argument Type | Required | Help Information |
+| --- | --- | --- | --- |
+| `--data` | str | Yes | data_path |
+| `--label` | str | Yes | label_path |
+| `--track` | str | Yes | tracking |
+| `--track_re` | str | Yes | track_results |
+| `--cfg` | int (multiple values) | Yes | cfg |
+| `--save_dir_all` | str | Yes | save_dir |
+
+### Moving detection
+Moving_detect.py is used for movement detection.
+
+#### Usage Guide
+#### Parameters of Moving_detect.py
+| Argument Name | Argument Type | Required | Help Information |
+| --- | --- | --- | --- |
+| `--data` | str | Yes | data_path |
+| `--save` | str | Yes | save_path |
+| `--save_dir_all` | str | Yes | save_dir |
+| `--pre_cfg` | float (multiple values) | Yes | pre_cfg |
+| `--smooth_cfg` | float (multiple values) | Yes | smooth_cfg |
+
+### Generate infence data for motion detection
+generate_data_all.py is used for generating infence data
+
+#### Usage Guide
+#### Parameters of generate_data_all.py
+| Argument Name | Argument Type | Required | Help Information |
+| --- | --- | --- | --- |
+| `--data` | str | Yes | data_path |
+| `--label` | str | Yes | label_path |
+| `--save` | str | Yes | save_path |
+| `--file` | str | Yes | file |
+| `--save_dir_all` | str | Yes | save_dir |
+
+### Recognizing activities through state-transfer-machine
+* infe_state.py: motion detection.
+* split_results.py: record the motion detection results in spererate files.
+* state.py: recognize activities. 
+
+#### Usage Guide
+#### Parameters of infe_state.py
+| Argument Name | Argument Type | Required | Choices | Default Value | Help Information |
+| --- | --- | --- | --- | --- | --- |
+| `--file_type` | str | No | `yaml`, `json` | `yaml` | None |
+| `--option_path` | str | Yes | None | None | path of the option json file |
+
+#### Parameters of split_results.py
+| Argument Name | Argument Type | Required | Help Information |
+| --- | --- | --- | --- |
+| `--dir` | str | Yes | motion |
+| `--save_dir` | str | Yes | split_results |
+| `--save_dir_all` | str | Yes | moving |
+
+#### Parameters of state.py
+| Argument Name | Argument Type | Required | Help Information |
+| --- | --- | --- | --- |
+| `--motion` | str | Yes | motion |
+| `--moving` | str | Yes | moving |
+| `--har` | str | Yes | har |
+| `--detect` | str | Yes | detect |
+| `--label` | str | Yes | detect |
+| `--har_cfg` | str | Yes | har_cfg |
+| `--smooth_cfg` | str | Yes | smooth_cfg |
+| `--start_cfg` | str | Yes | start_cfg |
+| `--gt_cfg` | str | Yes | gt_cfg |
+| `--gt_mode` | int | Yes | gt_cfg |
+| `--gt_trans` | int | Yes | gt_trans |
+| `--gt_sc` | str (multiple values) | Yes | gt_trans |
+| `--dis` | int | Yes | distance |
+| `--label_type` | int | Yes | label_type |
+| `--sample` | int | Yes | sample |
+| `--save` | str | Yes | save |
+| `--save_dir_all` | str | Yes | save_dir_all |
+
+### Show the numerical results and plot the confusion matrix
+run the code:
+```bash
+python cal_results.py
+```
 
 
 
