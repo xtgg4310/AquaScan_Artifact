@@ -43,3 +43,7 @@ xxxx_infe.sh: scripts to recognize five activties with state-transfer-machine.
 
 ## Checkpoints
 This folder contains checkpoint for evaluation.
+
+## Noted
+We updata prepare.sh in ../image_reconstruction, old version may lead to miss of checkpoints (optimal.pth). We update the script to fix this error.
+
