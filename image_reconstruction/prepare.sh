@@ -21,6 +21,7 @@ mv ./AquaScan_data/scripts/remove_history_0814.sh ../remove_history_0814.sh
 mv ./AquaScan_data/scripts/remove_history_0821.sh ../remove_history_0821.sh
 
 mv ./AquaScan_data/scripts/remove_results.sh ../remove_results.sh
+mv ./AquaScan_data/checkpoints ../checkpoints
 mkdir ./recover
 mkdir ./recover/txt ./recover/img
-rm -r AquaScan_data
+#rm -r AquaScan_data
