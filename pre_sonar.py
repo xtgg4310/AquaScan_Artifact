@@ -1100,10 +1100,6 @@ def label_transfer(label_direct,label_save_path,label_type,preprocess_flag,para,
         scenario.remove(".DS_Store")
     dir_create(label_save_path)
     for i in range(len(scenario)): 
-        #if scenario[i]!="08071005": #or scenario[i]=="08071006" or scenario[i]=="08071007"or scenario[i]=="08072001" or scenario[i]=="08072002":
-        #    continue 
-        #if scenario[i]!="705611302":
-        #    continue  
         label_raw_path=label_direct+"/"+scenario[i]
         label_save_path_scenario=label_save_path+"/"+scenario[i]
         sonars=os.listdir(label_raw_path)
