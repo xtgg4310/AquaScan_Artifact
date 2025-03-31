@@ -2,7 +2,6 @@
 """
 Created on Fri Dec 18 11:04:08 2020
 
-@author: Haozheng
 """
 
 from brping import Ping360
