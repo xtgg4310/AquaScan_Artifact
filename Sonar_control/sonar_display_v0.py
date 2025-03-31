@@ -2,7 +2,6 @@
 """
 Created on Mon Dec 21 11:21:55 2020
 
-@author: HeLix
 """
 import numpy as np
 import matplotlib.pyplot as plt
