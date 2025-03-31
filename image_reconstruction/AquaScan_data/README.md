@@ -46,6 +46,9 @@ xxxx_infe.sh: scripts to recognize five activties with state-transfer-machine.
 ## Checkpoints
 This folder contains checkpoint for evaluation.
 
+## Metric
+Our paper evaluate the five classes accuracy and F1-score of object detection. The limitation is this metric cannot completely reflect the influence of false alarms. We do not consider the false alarm as a sole class in the metric. A better way is to generate the label for false alarms and show the false recognition of these activites.
+
 ## Noted
 We updata prepare.sh in ../image_reconstruction, old version may lead to miss of checkpoints (optimal.pth). We update the script to fix this error.
 
