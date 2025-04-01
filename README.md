@@ -83,15 +83,6 @@ bash infe_0229.sh;bash infe_0807.sh;bash infe_0814.sh;bash infe_0821.sh
 python cal_results.py
 ```
 
-### Remove the produced results.
-
-```bash
-bash remove_history_0229.sh;bash remove_history_0807.sh;bash remove_history_0814.sh;bash remove_history_0821.sh
-bash remove_results.sh
-cd image_reconstruction
-bash remove_recover.sh
-```
-
 ### Expected Outputs:
 Object detection results:
 
@@ -100,6 +91,15 @@ Object detection results:
 * IoU_aver: 0.5205157489569353
 
 Accuracy: 0.916972814107274
+
+### Remove the produced results.
+
+```bash
+bash remove_history_0229.sh;bash remove_history_0807.sh;bash remove_history_0814.sh;bash remove_history_0821.sh
+bash remove_results.sh
+cd image_reconstruction
+bash remove_recover.sh
+```
 
 ## Detail of each function
 
