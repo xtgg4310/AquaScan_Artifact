@@ -1,12 +1,12 @@
 # Mobicom2025 Artifact Evaluation: AquaScan: A Sonar-based Underwater Sensing System for Human Activity Monitoring
 
-## This repo contains the code, deployment instructions, Experiment instruction and detail usage of each function.
+## This repo contains the code, deployment instructions, Experiment instructions, and detail usage of each function.
 
-## Installation and Preparation for Artifact evaluation
+## Installation and Preparation for Artifact Evaluation
 
-### Hardware depandencies
+### Hardware dependencies
 
-Computing platform: A server with CPU and GPU. Our code is tested on a computer with 7950x3D CPU, 4090 24GB GPU and 64GB RAM.
+Computing platform: A server with CPU and GPU. Our code is tested on a computer with a 7950x3D CPU, 4090 24GB GPU, and 64GB RAM.
 
 Sensor Node:
 * Control Unit: Raspberry Pi 4B model 8GB RAM
@@ -16,7 +16,7 @@ Sensor Node:
 ### Software dependencies
 For common python packages such as numpy, matplotlib, you can download through pip or conda install these packages
 
-Some important package version:
+Some important package versions:
 * numpy version: 1.24.3
 * scikit-image: 0.20.0
 * scikit-learn: 1.3.0
@@ -25,12 +25,12 @@ Some important package version:
 * CUDA Version: 12.1
 * Opencv-python: 4.8.1.78
 
-If you want to control scanning sonar (Ping 360) to collect data by yourselves, you should install the brping packages through run the command below:
+If you want to control scanning sonar (Ping 360) to collect data by yourselves, you should install the brping packages by running the command below:
 ```bash
 pip install --user bluerobotics-ping --upgrade
 ```
 ### Deployment Instruction
-To deploy Ping360 Sonar in the pool, we use a stand shown in the figure below to fix the position of sonars.
+To deploy Ping360 Sonar in the pool, we use a stand shown in the figure below to fix the position of the sonars.
 
 ![image](https://github.com/xtgg4310/AquaScan_Artifact/blob/main/figure/setup-2-2.jpg)
 
@@ -51,7 +51,7 @@ Please read the README.md in AquaScan_data to learn about the data and the label
 ### Image Reconstruction
 Run the script 0229_recover.sh, 0807_recover.sh, 0814_recover.sh, 0821_recover.sh in the folder image_reconstruction
 
-These four script will process unreconstructed dataset in the raw_data.
+These four scripts will process unreconstructed datasets in the raw_data.
 
 ```bash
 cd image_reconstruction
@@ -64,7 +64,7 @@ Run the script label_0229.sh,label_0807.sh, label_0814.sh,label_0821.sh
 
 For each script label_xxxx.sh, it contains the command to run the pre_sonar_bias.py pre_sonar.py/pre_sonar_opt_yoho.py label2dis.py track.py and moving_detect.py with pre-defined parameters.
 
-The script will generate visualization in the file with name xxxx_localize_3, intermediate results of tracking track_xxxx and result_xxxx. 
+The script will generate visualization in the file with the name xxxx_localize_3, intermediate results of tracking track_xxxx and result_xxxx. 
 
 ```bash
 cd ..
@@ -78,7 +78,7 @@ bash create_folder.sh
 bash infe_0229.sh;bash infe_0807.sh;bash infe_0814.sh;bash infe_0821.sh
 ```
 
-### Plot confusion matrix and show the numercial results
+### Plot confusion matrix and show the numerical results
 ```bash
 python cal_results.py
 ```
@@ -110,10 +110,10 @@ Please see the README.md in Sonar_control folder.
 Please see the README.md in image_reconstruction folder.
 
 ### object detection
-We have three code:
-* pre_sonar_bias.py: remove the bias caused by mechnical rotation of sonar (seldom happen)
-* pre_sonar.py: denoise sonar images and detect object on the sonar image.
-* pre_sonar_opt_yoho: optimze the dynamic object detection with binary search
+We have three codes:
+* pre_sonar_bias.py: remove the bias caused by mechanical rotation of sonar (seldom happens)
+* pre_sonar.py: denoise sonar images and detect objects on the sonar image.
+* pre_sonar_opt_yoho: optimize the dynamic object detection with binary search
 
 #### Usage Guide
 #### Parameters of pre_sonar_opt_yoho.py
@@ -198,8 +198,8 @@ Moving_detect.py is used for movement detection.
 | `--pre_cfg` | float (multiple values) | Yes | pre_cfg |
 | `--smooth_cfg` | float (multiple values) | Yes | smooth_cfg |
 
-### Generate infence data for motion detection
-generate_data_all.py is used for generating infence data
+### Generate inference data for motion detection
+generate_data_all.py is used for generating inference data
 
 #### Usage Guide
 #### Parameters of generate_data_all.py
@@ -213,7 +213,7 @@ generate_data_all.py is used for generating infence data
 
 ### Recognizing activities through state-transfer-machine
 * infe_state.py: motion detection.
-* split_results.py: record the motion detection results in spererate files.
+* split_results.py: record the motion detection results in separate files.
 * state.py: recognize activities. 
 
 #### Usage Guide
